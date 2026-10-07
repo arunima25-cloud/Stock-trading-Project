@@ -18,7 +18,7 @@ const Home = () => {
                 setLoading(false);
             })
             .catch(() => {
-                window.location.href = "http://localhost:3000/login";
+                window.location.href = "https://stock-trading-project-1-ctv9.onrender.com/login";
             });
     }, []);
 

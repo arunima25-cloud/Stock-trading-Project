@@ -23,7 +23,7 @@ function Login() {
 
             console.log(res.data);
 
-            window.location.href = "http://localhost:5173";
+            window.location.href = "https://stock-trading-project-1-ctv9.onrender.com";
         } catch (err) {
             console.log(err);
             alert("Invalid username or password");

@@ -23,7 +23,10 @@ const app = express();
 
 app.use(
     cors({
-        origin: ["http://localhost:3000", "http://localhost:5173"],
+       origin: [
+    "https://stock-trading-project-2-zew1.onrender.com",
+    "https://stock-trading-project-1-ctv9.onrender.com",
+],
         credentials: true,
     })
 );
