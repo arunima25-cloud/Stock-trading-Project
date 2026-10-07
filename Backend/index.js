@@ -20,6 +20,7 @@ const PORT = process.env.PORT || 3002;
 const url = process.env.MONGO_URL;
 
 const app = express();
+app.set("trust proxy", 1);
 
 app.use(
     cors({
@@ -34,18 +35,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // SESSION
-session({
-    secret: "yourSecretKey",
-    resave: false,
-    saveUninitialized: false,
-    store: MongoStore.create({
-        mongoUrl: url,
-    }),
-    cookie: {
-        secure: true,
-        sameSite: "none",
-    },
-})
+app.use(
+    session({
+        secret: "yourSecretKey",
+        resave: false,
+        saveUninitialized: false,
+        store: MongoStore.create({
+            mongoUrl: url,
+        }),
+        cookie: {
+            secure: true,
+            sameSite: "none",
+        },
+    })
+);
 
 // PASSPORT
 app.use(passport.initialize());
