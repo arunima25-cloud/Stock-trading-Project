@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+.nav-link {
+    margin-left: 40px;
+}
+
+#supportHero {
+    background-color: rgb(56, 126, 209);
+    color: white;
+    min-height: 480px;
+}
+
+#supportWrapper {
+    padding-left: 90px !important;
+    padding-right: 90px !important;
+    align-items: center;
+}
+
+#supportWrapper h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#supportWrapper a {
+    color: white;
+    font-size: 16px;
+}
+
+#supportContent {
+    padding: 70px 120px;
+    align-items: center;
+}
+
+#supportContent h1 {
+    font-size: 30px;
+    line-height: 1.35;
+    font-weight: 600;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+#searchBox {
+    display: flex;
+    width: 500px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+#searchBox input {
+    width: 380px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#searchBox button {
+    width: 120px;
+    border: none;
+    background-color: white;
+    border-left: 1px solid #ddd;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#supportLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    max-width: 550px;
+}
+
+#supportLinks a {
+    color: white;
+    font-size: 15px;
+}
+
+#featured {
+    padding-left: 60px;
+}
+
+#featured h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#featuredBox {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 20px 25px;
+    width: 520px;
+    border-radius: 5px;
+}
+
+#featuredBox ol {
+    margin: 0;
+    padding-left: 25px;
+}
+
+#featuredBox li {
+    padding: 8px 0;
+}
+
+#featuredBox a {
+    color: white;
+    font-size: 16px;
+}
