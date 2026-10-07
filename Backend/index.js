@@ -23,14 +23,13 @@ const app = express();
 
 app.use(
     cors({
-       origin: [
-    "https://stock-trading-project-2-zew1.onrender.com",
-    "https://stock-trading-project-1-ctv9.onrender.com",
-],
+        origin: [
+            "https://stock-trading-project-2-zew1.onrender.com",
+            "https://stock-trading-project-1-ctv9.onrender.com",
+        ],
         credentials: true,
     })
 );
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
