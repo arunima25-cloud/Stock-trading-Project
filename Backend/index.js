@@ -34,16 +34,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // SESSION
-app.use(
-    session({
-        secret: "yourSecretKey",
-        resave: false,
-        saveUninitialized: false,
-        store: MongoStore.create({
-            mongoUrl: url,
-        }),
-    })
-);
+session({
+    secret: "yourSecretKey",
+    resave: false,
+    saveUninitialized: false,
+    store: MongoStore.create({
+        mongoUrl: url,
+    }),
+    cookie: {
+        secure: true,
+        sameSite: "none",
+    },
+})
 
 // PASSPORT
 app.use(passport.initialize());
