@@ -11,7 +11,7 @@ const Holdings = () => {
 
     useEffect(() => {
     axios
-        .get("http://localhost:3002/allHoldings", {
+        .get("https://stock-trading-project-w4jh.onrender.com/allHoldings", {
             withCredentials: true,
         })
         .then((res) => {

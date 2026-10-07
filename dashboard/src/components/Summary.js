@@ -7,7 +7,7 @@ const Summary = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:3002/user", {
+            .get("https://stock-trading-project-w4jh.onrender.com/user", {
                 withCredentials: true,
             })
             .then((res) => {
